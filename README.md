@@ -75,16 +75,16 @@ function draw() {
 
 ## Options
 
-| Option       | Type    | Default    | Description                                                         |
-|--------------|---------|------------|---------------------------------------------------------------------|
-| `n`          | int     | `30`       | Rolling average sample size                                         |
-| `showMinMax` | bool    | `false`    | Whether to show min/max FPS                                         |
-| `showTarget` | bool    | `false`    | Whether to show target FPS                                          |
-| `label`      | string  | `FPS `     | Label prepended to FPS display (set to null for no label)           |
-| `element`    | element | `null`     | Custom p5.Element for display                                       |
-| `position`   | `[x,y]` | `[10, 10]` | Absolute position of the display (set to null for auto positioning) |
-| `dark`       | bool    | `false`    | Dark mode                                                           |
-| `border`     | bool    | `false`    | Show border around the display                                      |
+| Option       | Type       | Default   | Description                                                         |
+|--------------|------------|-----------|---------------------------------------------------------------------|
+| `n`          | int        | `30`      | Rolling average sample size                                         |
+| `showMinMax` | bool       | `false`   | Whether to show min/max FPS                                         |
+| `showTarget` | bool       | `false`   | Whether to show target FPS                                          |
+| `label`      | string     | `"FPS "`  | Label prepended to FPS display (set to null for no label)           |
+| `element`    | p5.Element | `null`    | Custom HTML element for display (if null, one will be created)      |
+| `position`   | `[x,y]`    | `[10,10]` | Absolute position of the display (set to null for auto positioning) |
+| `dark`       | bool       | `false`   | Dark mode                                                           |
+| `border`     | bool       | `false`   | Show border around the display                                      |
 
 ## License
 
