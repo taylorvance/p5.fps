@@ -6,12 +6,13 @@ FPS is calculated as a rolling average over the last `n` frames (default 30). It
 
 ## Getting Started
 
-Just include the source after p5.js.
+Just include the source after p5.js and before your sketch.
 
 ```html
 <head>
-    <script src="./p5.js"></script>
-    <script src="./p5.fps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.0.0/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/taylorvance/p5.fps@refs/tags/v0.1.0/p5.fps.js"></script>
+    <script src="sketch.js"></script>
 </head>
 ```
 
