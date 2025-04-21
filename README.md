@@ -1,4 +1,4 @@
-# p5-fps
+# p5.fps
 
 A simple FPS library for p5.js sketches. It displays the frames per second (FPS) in a small text box.
 
