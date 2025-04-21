@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://cdn.jsdelivr.net/npm/p5@2.0.0/lib/p5.min.js"></script>
+		<script src="./p5.fps.js"></script>
+	</head>
+	<body></body>
+
+	<script>
+		let fps1, fps2, fps3;
+
+		function setup() {
+			createCanvas(400, 250);
+
+			// Default UI
+			fps1 = createFPS();
+
+			// Customize some built-in options
+			fps2 = createFPS({
+				showMinMax: true,
+				position: null,
+				label: null,
+				dark: true,
+				border: true,
+			});
+
+			// Go crazy
+			fps3 = createFPS({label:'myFPS! ', showTarget:true});
+			fps3.element.position(50, 100);
+			fps3.element.style('font-size', '42px');
+			fps3.element.style('font-family', 'Comic Sans MS');
+			fps3.element.style('font-weight', 'bold');
+			fps3.element.style('color', 'blue');
+			fps3.element.style('background', 'pink');
+			fps3.element.style('padding', '10px');
+			fps3.element.style('border', '10px dotted red');
+		}
+
+		function draw() {
+			background(220);
+
+			updateFPS(fps1);
+			updateFPS(fps2);
+			updateFPS(fps3);
+		}
+	</script>
+</html>
